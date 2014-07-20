@@ -41,7 +41,7 @@ class FizzBuzz:
         elif number % 3 == 0:
             return 'fizz'
         elif number % 5 == 0:
-            return 'buzz'
+            return 'buzzx'
 
         return number
 
