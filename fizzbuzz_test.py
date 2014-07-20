@@ -19,11 +19,20 @@ class FizzBuzzTest(unittest.TestCase):
         result = self.fizzbuzz.take(6)
         self.assertEqual(result, 'fizz')
 
+    def test_input_number_divisible_by_5_should_return_buzz(self):
+        result = self.fizzbuzz.take(5)
+        self.assertEqual(result, 'buzz')
+
+        result = self.fizzbuzz.take(10)
+        self.assertEqual(result, 'buzz')
+
 
 class FizzBuzz:
     def take(self, number):
         if number % 3 == 0:
             return 'fizz'
+        elif number % 5 == 0:
+            return 'buzz'
 
         return number
 
