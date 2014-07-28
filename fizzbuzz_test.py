@@ -1,4 +1,5 @@
 import unittest
+import xmlrunner
 
 
 class FizzBuzzTest(unittest.TestCase):
@@ -47,4 +48,5 @@ class FizzBuzz:
 
 
 if __name__ == '__main__':
-    unittest.main()
+    #unittest.main()
+    unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
