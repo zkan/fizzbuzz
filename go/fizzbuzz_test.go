@@ -16,7 +16,7 @@ func TestFizzBuzz(t *testing.T) {
         var result string = FizzBuzz(each.number)
 
         if result != each.result {
-            t.Error("expect to get %d but got %s", each.number, result)
+            t.Errorf("expect to get %d but got %s", each.number, result)
         }
     }
 }
