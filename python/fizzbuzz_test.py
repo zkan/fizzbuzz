@@ -1,5 +1,6 @@
 import unittest
-import xmlrunner
+
+from fizzbuzz import FizzBuzz
 
 
 class FizzBuzzTest(unittest.TestCase):
@@ -35,18 +36,5 @@ class FizzBuzzTest(unittest.TestCase):
         self.assertEqual(result, 'fizzbuzz')
 
 
-class FizzBuzz:
-    def take(self, number):
-        if number % 3 == 0 and number % 5 == 0:
-            return 'fizzbuzz'
-        elif number % 3 == 0:
-            return 'fizz'
-        elif number % 5 == 0:
-            return 'buzz'
-
-        return number
-
-
 if __name__ == '__main__':
-    #unittest.main()
-    unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
+    unittest.main()
