@@ -4,13 +4,21 @@ import "strconv"
 
 
 func FizzBuzz(number int) string {
-    if number % 3 == 0 && number % 5 == 0 {
+    if isFizz(number) && isBuzz(number) {
         return "fizzbuzz"
-    } else if number % 3 == 0 {
+    } else if isFizz(number) {
         return "fizz"
-    } else if number % 5 == 0 {
+    } else if isBuzz(number) {
         return "buzz"
     } else {
         return strconv.Itoa(number)
     }
+}
+
+func isFizz(number int) bool {
+    return number % 3 == 0
+}
+
+func isBuzz(number int) bool {
+    return number % 5 == 0
 }
