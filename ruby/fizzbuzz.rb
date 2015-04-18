@@ -1,5 +1,7 @@
 class FizzBuzz
     def take(number)
-        "fizz"
+        if number % 3 == 0
+            "fizz"
+        end
     end
 end
