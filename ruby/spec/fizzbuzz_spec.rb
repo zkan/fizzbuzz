@@ -32,6 +32,16 @@ describe FizzBuzz do
         end
     end
 
+    describe "number" do
+        it "returns same number if number is not divisible by any number" do
+            result = fizzbuzz.take(1)
+            expect(result).to eq 1
+
+            result = fizzbuzz.take(7)
+            expect(result).to eq 7
+        end
+    end
+
     def fizzbuzz
         FizzBuzz.new
     end
