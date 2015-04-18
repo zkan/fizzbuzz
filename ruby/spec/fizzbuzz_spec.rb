@@ -22,6 +22,16 @@ describe FizzBuzz do
         end
     end
 
+    describe "fizzbuzz" do
+        it "returns fizzbuzz if number is divisible by three and five" do
+            result = fizzbuzz.take(15)
+            expect(result).to eq "fizzbuzz"
+
+            result = fizzbuzz.take(30)
+            expect(result).to eq "fizzbuzz"
+        end
+    end
+
     def fizzbuzz
         FizzBuzz.new
     end
