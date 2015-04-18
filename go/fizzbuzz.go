@@ -1,16 +1,16 @@
 package fizzbuzz
 
+import "strconv"
+
 
 func FizzBuzz(number int) string {
-    var result string
-
     if number % 3 == 0 && number % 5 == 0 {
-        result = "fizzbuzz"
+        return "fizzbuzz"
     } else if number % 3 == 0 {
-        result = "fizz"
+        return "fizz"
     } else if number % 5 == 0 {
-        result = "buzz"
+        return "buzz"
+    } else {
+        return strconv.Itoa(number)
     }
-
-    return result
 }
