@@ -8,4 +8,7 @@ exports.fizzbuzz = function(number) {
     else if (number % 5 === 0) {
         return "buzz";
     }
+    else {
+        return number;
+    }
 }
