@@ -24,4 +24,14 @@ describe("FizzBuzz", function() {
         result = app.fizzbuzz(10);
         expect(result).toBe("buzz");
     });
+
+    it("should return fizzbuzz if input is 15", function() {
+        result = app.fizzbuzz(15);
+        expect(result).toBe("fizzbuzz");
+    });
+
+    it("should return fizzbuzz if input is 30", function() {
+        result = app.fizzbuzz(30);
+        expect(result).toBe("fizzbuzz");
+    });
 });
