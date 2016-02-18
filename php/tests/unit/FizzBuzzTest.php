@@ -8,6 +8,7 @@ class FizzBuzzTest extends \Codeception\TestCase\Test {
     protected function _before() {
         $this->fizzbuzz = new FizzBuzz();
     }
+
     public function testInputThreeShouldReturnFizz() {
         $result = $this->fizzbuzz->take( 3 );
         $this->assertEquals( "Fizz", $result );
@@ -16,5 +17,10 @@ class FizzBuzzTest extends \Codeception\TestCase\Test {
     public function testInputSixShouldReturnFizz() {
         $result = $this->fizzbuzz->take( 6 );
         $this->assertEquals( "Fizz", $result );
+    }
+
+    public function testInputFiveShouldReturnBuzz() {
+        $result = $this->fizzbuzz->take( 5 );
+        $this->assertEquals( "Buzz", $result );
     }
 }
