@@ -2,7 +2,7 @@
 
 class FizzBuzz {
     function take( $number ) {
-        if ( 15 == $number ) {
+        if ( 0 == $number % 3 and 0 == $number % 5 ) {
             return "FizzBuzz";
         } elseif ( 0 == $number % 3 ) {
             return "Fizz";
