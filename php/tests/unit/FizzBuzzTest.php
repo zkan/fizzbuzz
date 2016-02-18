@@ -38,4 +38,9 @@ class FizzBuzzTest extends \Codeception\TestCase\Test {
         $result = $this->fizzbuzz->take( 30 );
         $this->assertEquals( "FizzBuzz", $result );
     }
+
+    public function testInputOneShouldReturnOne() {
+        $result = $this->fizzbuzz->take( 1 );
+        $this->assertEquals( 1, $result );
+    }
 }

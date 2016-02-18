@@ -8,6 +8,8 @@ class FizzBuzz {
             return "Fizz";
         } elseif ( 0 == $number % 5 ) {
             return "Buzz";
+        } else {
+            return $number;
         }
     }
 }
