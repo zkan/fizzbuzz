@@ -1,5 +1,3 @@
-package fizzbuzz
-
 import org.scalatest.{FunSuite, Matchers}
 
 class FizzBuzzSuite extends FunSuite with Matchers {

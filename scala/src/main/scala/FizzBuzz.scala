@@ -1,5 +1,3 @@
-package fizzbuzz
-
 object FizzBuzz {
   def say(number: Int) = {
     (number % 3, number % 5) match {
