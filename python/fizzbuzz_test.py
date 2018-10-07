@@ -34,6 +34,9 @@ class FizzBuzzTest(unittest.TestCase):
 
         result = self.fizzbuzz.take(30)
         self.assertEqual(result, 'fizzbuzz')
+        
+        result = self.fizzbuzz.take(0)
+        self.assertEqual(result, 'fizzbuzz')
 
 
 if __name__ == '__main__':
