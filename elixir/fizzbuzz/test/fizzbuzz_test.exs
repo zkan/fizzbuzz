@@ -33,4 +33,8 @@ defmodule FizzbuzzTest do
   test "takes 7 then returns 7" do
     assert Fizzbuzz.say(7) == 7
   end
+
+  test "takes 0 then returns 0" do
+    assert Fizzbuzz.say(0) == 0
+  end
 end
