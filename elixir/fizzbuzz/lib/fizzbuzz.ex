@@ -1,4 +1,4 @@
-defmodule Fizzbuzz do
+defmodule FizzBuzz do
   def say(number) do
     cond do
         number == 0 ->
