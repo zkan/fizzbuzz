@@ -7,6 +7,8 @@ defmodule Fizzbuzz do
             :Fizz
         rem(number, 5) == 0 ->
             :Buzz
+        true ->
+            number
     end
   end
 end
