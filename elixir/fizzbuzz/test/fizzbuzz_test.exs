@@ -9,4 +9,12 @@ defmodule FizzbuzzTest do
   test "takes 6 then returns Fizz" do
     assert Fizzbuzz.say(6) == :Fizz
   end
+
+  test "takes 5 then returns Buzz" do
+    assert Fizzbuzz.say(5) == :Buzz
+  end
+
+  test "takes 10 then returns Buzz" do
+    assert Fizzbuzz.say(10) == :Buzz
+  end
 end

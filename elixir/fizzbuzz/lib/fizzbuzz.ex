@@ -1,7 +1,10 @@
 defmodule Fizzbuzz do
   def say(number) do
-    if rem(number, 3) == 0 do
-        :Fizz
+    cond do
+        rem(number, 3) == 0 ->
+            :Fizz
+        rem(number, 5) == 0 ->
+            :Buzz
     end
   end
 end
