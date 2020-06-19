@@ -53,3 +53,9 @@ docs/_build/
 
 # Swp files
 *.swp
+
+# IntelliJ
+.idea
+
+# Kotlin
+out
