@@ -6,4 +6,7 @@ fun main() {
 
     val hello = Hello()
     println(hello.say())
+
+    val hey = Hey()
+    println(hey.say())
 }
