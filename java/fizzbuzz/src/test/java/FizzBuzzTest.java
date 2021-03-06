@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 class FizzBuzzTest {
     FizzBuzz fizzbuzz;
@@ -56,5 +58,16 @@ class FizzBuzzTest {
     void testGetThirtyShouldReturnFizzBuzz() {
         String actual = this.fizzbuzz.get(30);
         Assertions.assertEquals("FizzBuzz", actual);
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+        "1, 1",
+        "3, Fizz",
+        "5, Buzz",
+    })
+    void fizzBuzzShouldGetExpectedResults(int input, String expected) {
+        String actual = this.fizzbuzz.get(input);
+        Assertions.assertEquals(expected, actual);
     }
 }
