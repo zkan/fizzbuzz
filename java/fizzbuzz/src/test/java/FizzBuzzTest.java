@@ -24,4 +24,11 @@ class FizzBuzzTest {
         String actual = fizzBuzz.get(3);
         Assertions.assertEquals("Fizz", actual);
     }
+
+    @Test
+    void testGetSizShouldReturnFizz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actual = fizzBuzz.get(6);
+        Assertions.assertEquals("Fizz", actual);
+    }
 }
