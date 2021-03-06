@@ -62,9 +62,10 @@ class FizzBuzzTest {
 
     @ParameterizedTest
     @CsvSource({
-        "1, 1",
-        "3, Fizz",
-        "5, Buzz",
+            "1, 1",
+            "3, Fizz",
+            "5, Buzz",
+            "15, FizzBuzz",
     })
     void fizzBuzzShouldGetExpectedResults(int input, String expected) {
         String actual = this.fizzbuzz.get(input);
