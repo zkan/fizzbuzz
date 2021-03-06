@@ -48,4 +48,15 @@ class FizzBuzzTest {
         Assertions.assertEquals("Buzz", actual);
     }
 
+    @Test
+    void testGetFifteenShouldReturnFizzBuzz() {
+        String actual = this.fizzbuzz.get(15);
+        Assertions.assertEquals("FizzBuzz", actual);
+    }
+
+    @Test
+    void testGetThirtyShouldReturnFizzBuzz() {
+        String actual = this.fizzbuzz.get(30);
+        Assertions.assertEquals("FizzBuzz", actual);
+    }
 }
