@@ -17,4 +17,11 @@ class FizzBuzzTest {
         String actual = fizzbuzz.get(2);
         Assertions.assertEquals("2", actual);
     }
+
+    @Test
+    void testGetThreeShouldReturnFizz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actual = fizzBuzz.get(3);
+        Assertions.assertEquals("Fizz", actual);
+    }
 }
